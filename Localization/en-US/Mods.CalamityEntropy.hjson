@@ -305,10 +305,10 @@ Items: {
 				DisplayName: Exergy Swirlblade
 				Tooltip:
 					'''
-					Flies for a while or hits an enemy, then deploys a multi-hit sawblade that shrinks over time
-					If deployed by enemy contact, the ringblade sticks to that enemy
-					As the sawblade shrinks, it fires smaller homing sawblades that stop tracking after one hit
-					Stealth attack increases deployment range and duration, and fires a larger persistent homing sawblade at the end
+					Throw a sawblade that on hit or after some time stops in place, releasing 3 more smaller blades as it spins
+					The sawblades deals damage in a large area when spinning and will return after some time
+					Smaller blades home towards the closest enemy
+					Stealth strikes fly out faster, send out 5 smaller blades and release one large relentless blade on return
 					'''
 			}
 
@@ -316,10 +316,11 @@ Items: {
 				DisplayName: Apeirokyklos
 				Tooltip:
 					'''
-					Deploys a multi-hit sawblade when flies for a while or hits an enemy 
-					Each hit of the sawblade summons an Abyss Spike from below to pierce the target
-					Stealth attack deals high-damage impact and knocks back on hit,
-					then charges and fires many spikes to pierce targets
+					Throw a sawblade that on hit or after some time stops in place and starts spinning
+					The sawblade deals damage in a large area when spinning and will return after some time
+					On hit the sawblade summons beams of light from below to pierce enemies
+					Stealth strikes fly out faster and bounce off of hit enemies before barraging them with beams of light
+					Attacks inflict [cebuff:CalamityEntropy/LifeOppress] on hit
 					'''
 			}
 		}
@@ -4535,7 +4536,7 @@ Items: {
 		Tooltip:
 			'''
 			Summon Flowery to follow you
-			Flowery will use Jarona at enemies nearby
+			Flowery will use Jarona at nearby enemies
 			'''
 	}
 
@@ -4545,7 +4546,8 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
-			Guide the Desert Nuisance to bite the target
+			{$CommonItemTooltip.Whips}
+			Guides a Desert Nuisance to chomp the target
 			'''
 	}
 
@@ -4555,7 +4557,8 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
-			Call in a strike drone swarm to strafe the target
+			{$CommonItemTooltip.Whips}
+			Calls in a strike drone swarm to strafe the target
 			'''
 	}
 
@@ -4565,7 +4568,8 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
-			Summon the Squirrel Squad to throw stones at the target
+			{$CommonItemTooltip.Whips}
+			Summons the Squirrel Squad to throw stones at the target
 			'''
 	}
 
@@ -4575,7 +4579,8 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
-			Summon a bone serpant to burn all encountered targets
+			{$CommonItemTooltip.Whips}
+			Summons a bone serpent that charges through the target
 			'''
 	}
 
@@ -4585,7 +4590,8 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
-			Summon phantom eyes to attack target
+			{$CommonItemTooltip.Whips}
+			Summons true Eyes of Cthulhu to attack the target
 			'''
 	}
 
@@ -4595,7 +4601,8 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
-			Summon vines to tear target apart
+			{$CommonItemTooltip.Whips}
+			Summons fast, piercing vines to tear the target apart
 			'''
 	}
 
@@ -4605,7 +4612,8 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
-			Summon some detector that fire lasers to the target
+			{$CommonItemTooltip.Whips}
+			Summons a small group of probes to fire lasers at the target
 			'''
 	}
 
@@ -4615,7 +4623,8 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
-			Summon three pigeons to attack the target
+			{$CommonItemTooltip.Whips}
+			Summons three pigeons to repeatedly attack the target
 			'''
 	}
 
@@ -4634,7 +4643,8 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
-			Release the imprisoned spirits, and they will attack their targets using tracking ice bullets
+			{$CommonItemTooltip.Whips}
+			After some time releases a swarm of imprisoned spirits that fire homing ice bolts at nearby enemies
 			'''
 	}
 
@@ -4644,8 +4654,8 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
-			Summon a blue fox
-			The fox will steal the mushroom and release a spore cloud
+			{$CommonItemTooltip.Whips}
+			Summons a blue fox that will steal the mushroom and release a damaging spore cloud
 			'''
 	}
 
@@ -4655,8 +4665,9 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
-			After sticking, it will recharge for two seconds and then bounce off the target,
-			then releasing holy flames to burn the target
+			{$CommonItemTooltip.Whips}
+			The stone charges for some time before seperating
+			When seperated, the stone unleashes beams of purifying flame at the target
 			'''
 	}
 
@@ -4666,7 +4677,8 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
-			Summon [ceeffect/cruiser:Void-devour bullet] chasing the target
+			{$CommonItemTooltip.Whips}
+			Summons [ceeffect/cruiser:Void-devour bullets] that relentlessly chase the target
 			'''
 	}
 
@@ -4676,7 +4688,8 @@ Items: {
 			'''
 			{$BaitCommonTooltip1}
 			{$BaitCommonTooltip2}
-			Call Azafure War satellite to strike target
+			{$CommonItemTooltip.Whips}
+			Calls down the Azafure war satellite to pierce the target with a beam of energy
 			'''
 	}
 
@@ -4691,7 +4704,7 @@ Items: {
 
 	AzafureTwinSaw: {
 		DisplayName: Azafure Twin Saw
-		Tooltip: Waving up and down, then bringing the two saws together and spraying sparks forward
+		Tooltip: Swings up and down before bringing the two saws together, spraying sparks forward
 	}
 
 	AstralSample: {
@@ -4700,11 +4713,11 @@ Items: {
 	}
 }
 
-BaitCommonTooltip1: Charge when held. Usable when fully charged
+BaitCommonTooltip1: Charges while held and can only be thrown at maximum charge
 BaitCommonTooltip2:
 	'''
-	Throw a bait that will stick to the enemy after hitting it,
-	and cause minion deal {0} more damage to it
+	Throw a bait that will stick to enemies on hit
+	Minions deal an additional {0} damage to stuck enemies
 	'''
 SmolderingSetBonus:
 	'''
@@ -6139,18 +6152,60 @@ WyrmChatBloodMoon2: Maybe you should go bed.
 WyrmChatRain1: It's raining, it's really refreshing. I have never felt it before.
 WyrmChatRain2: Rainwater falling on the body feels quite comfortable. This is not comparable to the water pressure in the abyss.
 WyrmChatRain3: The air is very fresh, isn't it?
-loreCruiser: Entropy, in definition, is the concept of everything eventually returning to nothing. To hunt one down who has embraced this concept, you must prove you believe it too. Shattering that bottle must have been enough to attract its attention. Is only hunting down those with similar energies a survival instinct? Or is it something selfish, more like a goal or sport to it? Regardless, entities like these are best left alone from my experience. If you lost, the world may have returned to the eternal silence from whence it came.
-loreLuminaris: An expected development, the only organism that evolved alongside the astral infection. Many have been blighted by it, but with fast generational cycles comes evolution. Nowadays, it is viewed as an embodiment of beauty, its lithe form dancing along constellations. New legends have been born off the glittering wings of the starborn moth. However, various offerings have rendered it unpredictable to those who bring offerings, and is known to attack those that bring what it considers "offensive." Did power get to its head? Or did it just get used to what was handed to it? Whether natural or intentional, we shall never know now, just be aware of exactly where you let your power strike, for the innocent take no part in our pursuit.
+loreCruiser:
+	'''
+	Entropy, in definition, is the concept of everything eventually returning to nothing. 
+	To hunt one down who has embraced this concept, you must prove you believe it too. 
+	Shattering that bottle must have been enough to attract its attention. 
+	Is only hunting down those with similar energies a survival instinct? 
+	Or is it something selfish, more like a goal or sport to it? 
+	Regardless, entities like these are best left alone from my experience. 
+	If you lost, the world may have returned to the eternal silence from whence it came.
+	'''
+loreLuminaris:
+	'''
+	An expected development, the only organism that evolved alongside the astral infection.
+	Many have been blighted by it, but with fast generational cycles comes evolution.
+	Nowadays, it is viewed as an embodiment of beauty, its lithe form dancing along constellations.
+	New legends have been born off the glittering wings of the starborn moth.
+	However, various offerings have rendered it unpredictable to those who interact with it, and is known to attack those that bring what it considers "offensive".
+	Did power get to its head? Or did it just get used to what was handed to it? Whether natural or intentional, we shall never know now,
+	just be aware of exactly where you let your power strike, for the innocent take no part in our pursuit.
+	'''
 UseToggle: Use this item to turn on or off special effects:
 loreCruiserEffect: Increase the max life by 20 and increase the max mana by 50
-loreNihTwin: Imagine a world where the foundation of order lies not in resisting the dissolution of things, but the amplification of such processes. A realm of simultaneously nothing and everything, matter and energy lying in states of neverending change, things both within and far from the bounds of mortal comprehension. When you ended the Wall of Flesh that imprisoned the essences of light and dark, those contained energies tore the rift between our reality and theirs wider still. The abhorrent creature you have slain is but a droplet from the river between these worlds. What happens from here is neither my business to know nor my responsibility, that lies on you. The gears of fate continue their slow, inexorable turn regardless.
+loreNihTwin:
+	'''
+	Imagine a world where the foundation of order lies not in resisting the dissolution of things, but the amplification of such processes.
+	A realm of simultaneously nothing and everything, matter and energy lying in states of neverending change,
+	things both within and far from the bounds of mortal comprehension.
+	When you ended the Wall of Flesh that imprisoned the essences of light and dark,
+	those contained energies tore the rift between our reality and theirs wider still.
+	The abhorrent creature you have slain is but a droplet from the river between these worlds.
+	What happens from here is neither my business nor my responsibility, that lies on you.
+	The gears of fate continue their slow, inexorable turn regardless.
+	'''
 NihTwinLoreEffect:
 	'''
 	Increase resistance to [cebuff:CalamityEntropy/VoidTouch] by {1}%
 	Grants {2}HP/s life regeneration
 	{3}% increased maximum flight time
 	'''
-loreProphet: No army, kingdom, or soverign can endure for long without practitioners of temporal magicks-- those who pluck the feathers of tomorrow from the golden goose of prediction, weaving the future via present calculus. These powers can be practiced carefully and prove invaluable... or be pushed beyond the limits set by those before us. Those who gaze into realms we were never meant to comprehend, looking not just through time, but through space. We found one willing locked in the Dungeon. It took some convincing, but eventually Draedon and I gave him the last push to truly see past our tiny land. What can be described then was something willing to repel even my curiosity. The man warped, changed, took on the spiritual energy around it, the runes in every forbidden book in the Dungeon. It bled all the same, its spirit sealing itself in a tome, almost aware of what it had become. I am surprised to see you decided to call it forth again, however I believe leaving the void's fate in your hands was the right decision. Thank you, for letting him finally rest.
+loreProphet:
+	'''
+	No army, kingdom, or soverign can endure for long without practitioners of temporal magicks,
+	those who pluck the feathers of tomorrow from the golden goose of prediction, weaving the future via present calculus.
+	These powers can be practiced carefully and proven invaluable... or be pushed beyond the limits set by those before us.
+	Those who gaze into realms we were never meant to comprehend, looking not just through time, but through space.
+	We found one that was almost willing locked in the Dungeon.
+	It took some convincing, but eventually Draedon and I gave him the last push to truly see past our tiny land.
+	What can be described then was something willing to repel even my curiosity.
+	The man warped, changed, took on the spiritual energy around it, the runes in every forbidden book in the Dungeon.
+	It bled all the same, its spirit sealing itself in a tome, almost aware of what it had become.
+	I am surprised to see you decided to call it forth again,
+	however I believe leaving the void's fate in your hands was the right decision.
+	Thank you, for letting him finally rest.
+	'''
 
 Keybinds: {
 	ThrowPoop.DisplayName: Throw Poop
